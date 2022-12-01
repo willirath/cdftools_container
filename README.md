@@ -14,3 +14,17 @@ $ docker run --rm -v /var/run/docker.sock:/var/run/docker.sock:ro -v ${PWD}:/out
 Then, `scp` or `rsync` the `cdftools.sif` to wherever you want to use it.
 
 See the [Dockerfile](Dockerfile) for details.
+
+## Run
+
+To see the help dialogue of `cdfmoc` with Docker:
+
+```shell
+docker run -v $PWD:/work -w /work cdftools:latest cdfmoc
+```
+
+And with Singularity / Apptainer:
+
+```shell
+singularitu run -B $PWD:/work -W /work cdftools.sif cdfmoc
+```
