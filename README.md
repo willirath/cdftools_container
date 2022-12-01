@@ -26,5 +26,5 @@ $ docker run -v $PWD:/work -w /work cdftools:latest cdfmoc
 And with Singularity / Apptainer:
 
 ```shell
-$ singularitu run -B $PWD:/work -W /work cdftools.sif cdfmoc
+$ singularity run -B $PWD:/work -W /work cdftools.sif cdfmoc
 ```
