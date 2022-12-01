@@ -20,11 +20,11 @@ See the [Dockerfile](Dockerfile) for details.
 To see the help dialogue of `cdfmoc` with Docker:
 
 ```shell
-docker run -v $PWD:/work -w /work cdftools:latest cdfmoc
+$ docker run -v $PWD:/work -w /work cdftools:latest cdfmoc
 ```
 
 And with Singularity / Apptainer:
 
 ```shell
-singularitu run -B $PWD:/work -W /work cdftools.sif cdfmoc
+$ singularitu run -B $PWD:/work -W /work cdftools.sif cdfmoc
 ```
